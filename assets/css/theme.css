@@ -2858,7 +2858,7 @@ body.ttgr-cat-nav-open .pgi-video-wrap.anim-image-parallax {
 /* tt-Ggrid categories trigger position fixed */
 .ttgr-cat-trigger-wrap.ttgr-cat-fixed {
 	position: fixed;
-	bottom: 5%;
+	bottom: 20%;
 	right: 4%;
 	padding: 10px 0 10px 10px;
 	z-index: 9;
