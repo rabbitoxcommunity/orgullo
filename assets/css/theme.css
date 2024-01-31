@@ -841,6 +841,7 @@ body.is-firefox .tt-heading.tt-heading-stroke .tt-heading-title {
 	position: relative;
 	padding-left: 3.5%;
 	padding-right: 3.5%;
+	transition: 0.3s ease-in;
 }
 
 .header-logo .tt-logo {
@@ -849,6 +850,7 @@ body.is-firefox .tt-heading.tt-heading-stroke .tt-heading-title {
 	top: 50px;
 	padding-left: 3.5%;
 	padding-right: 3.5%;
+	transition: 0.3s ease-in;
 }
 
 /* Header logo 
