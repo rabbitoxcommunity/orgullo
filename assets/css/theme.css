@@ -1751,7 +1751,7 @@ body:not(.is-mobile) .tt-ol-menu-list>li>.tt-ol-submenu-trigger:hover>a,
 .tt-ol-menu-toggle-btn {
 	position: relative;
 	display: flex;
-	width: 70px;
+	width: 80px;
 	height: 50px;
 	align-items: center;
 	justify-content: center;
