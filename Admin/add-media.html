@@ -179,24 +179,52 @@
                                         <div class="col-md-12">
                                             <div class="form-group">
                                                 <label for="exampleFormControlTextarea1">About The project</label>
-                                                <textarea class="form-control" id="exampleFormControlTextarea1"
-                                                    rows="3" placeholder="type here"></textarea>
+                                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                                    placeholder="type here"></textarea>
                                             </div>
                                         </div>
                                         <div class="col-md-12">
                                             <div class="form-group">
                                                 <label for="exampleFormControlTextarea1">Description (Optional)</label>
-                                                <textarea class="form-control" id="exampleFormControlTextarea1"
-                                                    rows="3" placeholder="type here"></textarea>
+                                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                                    placeholder="type here"></textarea>
                                             </div>
                                         </div>
                                         <div class="col-md-12">
                                             <div class="form-group">
-                                                <label for="title">Upload Multiple files (Images/Videos)</label>
-                                                <input type="file" class="form-control" id="title" multiple accept="image/*,video/*"
-                                                    placeholder="Type here">
+                                                <label for="title">Upload Multiple files (Images)</label>
+                                                <input type="file" class="form-control" id="title" multiple
+                                                    accept="image/*,video/*" placeholder="Type here">
                                             </div>
                                         </div>
+                                        <div class="col-md-12 mb-5">
+                                            <div id="dynamic-form" x-data="{ CONTROLLER }">
+                                                <table id="dynamic-form-table">
+                                                    <thead>
+                                                        <th></th>
+                                                        <th></th>
+                                                        <th></th>
+                                                    </thead>
+                                                    <tbody></tbody>
+                                                </table>
+                                                <template data-target="#dynamic-form-table tbody">
+                                                    <tr class="dynamic-row" data-index="1">
+                                                        <td class="w-50 ps-0 p-2">
+                                                            <input class="form-control" placeholder="Type here" type="text" name="url">
+                                                        </td>
+                                                        <td class="w-50 p-2"><input class="form-control" placeholder="Upload" type="file" name="thumbnail"></td>
+                                                        <td>
+                                                            <button class="delete-button btn btn-danger" @click="controller.deleteRow()">Delete</button>
+                                                        </td>
+                                                    </tr>
+                                                </template>
+
+
+
+                                                <button id="add-button" class="btn btn-dark">Add Video Url & Thumbnail</button>
+                                            </div>
+                                        </div>
+
                                         <div class="col-md-12">
                                             <button type="submit"
                                                 class="btn btn-primary waves-effect waves-light">Submit</button>
@@ -272,6 +300,9 @@
 
     <!-- App js -->
     <script src="assets/js/theme.js"></script>
+
+
+    <script src="assets/js/dynamic.js"></script>
 
 </body>
 
