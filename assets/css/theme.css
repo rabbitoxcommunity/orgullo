@@ -2311,6 +2311,7 @@ body:not(.tt-boxed) .page-header-inner,
 	font-weight: 500;
 	color: #CCC;
 	z-index: 9;
+	text-align: center;
 }
 
 .ph-caption-title+.ph-caption-subtitle {

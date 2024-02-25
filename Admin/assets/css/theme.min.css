@@ -1558,3 +1558,8 @@ div.dt-button-info h2 {
 }
 
 /*# sourceMappingURL=theme.min.css.map */
+.spinner-border {
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+}
