@@ -258,10 +258,67 @@ body.tt-transition .ptr-prel-content {
 	font-size: 28px;
 	font-weight: bold;
 	font-weight: 600;
-	/* animation: pulse 5s infinite; */
+
 }
+.ptr-prel-content h1{
+	color:#444
+}
+h1.animation_loop > span {
+	position: relative;
+	display: inline-block;
+	height: 1.25em;
+	vertical-align: bottom;
+	overflow: hidden;
+  }
+  h1.animation_loop > span span {
+	display: block;
+	animation: animateWords 10s infinite ease;
+  }
+  
+  /* divided into as many parts as there are spans, each part decreasing the translateY by -100% */
+  @keyframes animateWords {
+	0% {
+	  transform: translateY(0%);
+	}
+	33% {
+	  transform: translateY(-100%);
+	}
+	66% {
+	  transform: translateY(-200%);
+	}
+	100% {
+	  transform: translateY(-300%);
+	}
+  }
 
-
+  h1.animation_loop > span {
+	position: relative;
+	display: inline-block;
+	height: 1.25em;
+	vertical-align: bottom;
+	overflow: hidden;
+	color: #444;
+  }
+  h1.animation_loop > span span {
+	display: block;
+	animation: animateWords 8s infinite ease;
+  }
+  
+  /* divided into as many parts as there are spans, each part decreasing the translateY by -100% */
+  @keyframes animateWords {
+	0% {
+	  transform: translateY(0%);
+	}
+	33% {
+	  transform: translateY(-100%);
+	}
+	66% {
+	  transform: translateY(-200%);
+	}
+	100% {
+	  transform: translateY(-300%);
+	}
+  }
 
 .ptr-prel-image {
 	max-height: 82px;
@@ -11427,61 +11484,13 @@ body:not(.is-mobile) .tt-style-switch:hover {
 	.tt-ol-menu-toggle-btn-holder {
 		width: 45px;
 	}
+	.ptr-prel-content h1{
+		font-size: 22px
+	}
 }
-
-  h1.animation_loop > span {
-	position: relative;
-	display: inline-block;
-	height: 1.25em;
-	vertical-align: bottom;
-	overflow: hidden;
-  }
-  h1.animation_loop > span span {
-	display: block;
-	animation: animateWords 10s infinite ease;
-  }
-  
-  /* divided into as many parts as there are spans, each part decreasing the translateY by -100% */
-  @keyframes animateWords {
-	0% {
-	  transform: translateY(0%);
-	}
-	33% {
-	  transform: translateY(-100%);
-	}
-	66% {
-	  transform: translateY(-200%);
-	}
-	100% {
-	  transform: translateY(-300%);
-	}
-  }
-
-  h1.animation_loop > span {
-	position: relative;
-	display: inline-block;
-	height: 1.25em;
-	vertical-align: bottom;
-	overflow: hidden;
-	color: #444;
-  }
-  h1.animation_loop > span span {
-	display: block;
-	animation: animateWords 8s infinite ease;
-  }
-  
-  /* divided into as many parts as there are spans, each part decreasing the translateY by -100% */
-  @keyframes animateWords {
-	0% {
-	  transform: translateY(0%);
-	}
-	33% {
-	  transform: translateY(-100%);
-	}
-	66% {
-	  transform: translateY(-200%);
-	}
-	100% {
-	  transform: translateY(-300%);
-	}
-  }
+img.tt-logo-light.magnetic-item {
+    width: 210px;
+}
+select{
+	-webkit-appearance: none !important;
+}
